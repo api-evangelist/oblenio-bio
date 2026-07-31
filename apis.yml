@@ -1,8 +1,24 @@
 aid: oblenio-bio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/oblenio-bio.png
 name: Oblenio Bio
-description: 'Oblenio Bio is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: life-sciences. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Oblenio Bio is a clinical-stage biotechnology company developing tri-specific
+  antibody immunotherapies for refractory autoimmune diseases. Its lead candidate,
+  LBL-051, is a tri-specific T-cell engager targeting BCMA, CD19, and CD3 to deplete
+  B-cells and pursue long-term, drug-free remission and immune reset for patients.
+  Founded with support from Aditum Bio and surfaced through the GV portfolio, Oblenio
+  Bio operates in the life-sciences sector and does not currently publish a public
+  developer or API program.'
 url: https://raw.githubusercontent.com/api-evangelist/oblenio-bio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Life Sciences
+- Biotechnology
+- Immunotherapy
+- Autoimmune
+- Clinical Stage
+- Therapeutics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/oblenio-bio-domain-security.yml
 - type: Website
   url: https://www.obleniobio.com
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 1
+  pass: local-v1
